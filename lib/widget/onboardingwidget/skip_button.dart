@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../ui/homePage.dart';
+import '../../ui/homePageScreen.dart';
 
 class CustomSkipButton extends StatelessWidget{
   @override

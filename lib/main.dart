@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:supermarket/ui/on_boarding.dart';
+import 'package:supermarket/ui/on_boardingScreen.dart';
 
 void main() {
   runApp(MyApp());
