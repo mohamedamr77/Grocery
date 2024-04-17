@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supermarket/ui/homePageScreen.dart';
 import 'package:supermarket/widget/onboardingwidget/button_next_start.dart';
 import 'package:supermarket/widget/onboardingwidget/pageviewwidget/list_onboarding.dart';
-import 'package:supermarket/variable_data.dart';
+import 'package:supermarket/widget/onboardingwidget/variable_data.dart';
 import 'package:supermarket/widget/onboardingwidget/pageviewwidget/page_view_item.dart';
 import '../widget/onboardingwidget/dot_widget/list_generate_dot.dart';
 import '../widget/onboardingwidget/skip_button.dart';

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:supermarket/ui/login_screen.dart';
 import 'package:supermarket/ui/on_boardingScreen.dart';
 import 'package:supermarket/ui/splashscreen.dart';
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
       return MaterialApp(
-        home:  SplashScreen(),
+        home:  LoginScreen(),
         debugShowCheckedModeBanner: false,
       );
   }

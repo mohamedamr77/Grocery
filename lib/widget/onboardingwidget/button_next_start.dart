@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:supermarket/widget/onboardingwidget/pageviewwidget/list_onboarding.dart';
 
-import '../../variable_data.dart';
+import 'variable_data.dart';
 
 class CustomNextOrStartButton extends StatelessWidget{
   void Function()? onPressed;

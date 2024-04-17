@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:supermarket/variable_data.dart';
+import 'package:supermarket/widget/onboardingwidget/variable_data.dart';
 
 class CustomDot extends StatelessWidget {
   int index;
