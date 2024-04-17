@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomRowDivider extends StatelessWidget{
+  const CustomRowDivider({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -10,8 +12,8 @@ class CustomRowDivider extends StatelessWidget{
           width: MediaQuery.of(context).size.width/2-30,
           color: Colors.black,
         ),
-        SizedBox(width: 6,),
-        Text("or",
+        const SizedBox(width: 6,),
+        const Text("or",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 16,
@@ -19,7 +21,7 @@ class CustomRowDivider extends StatelessWidget{
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(width: 6,),
+        const SizedBox(width: 6,),
         Container(
           height: 2,
           width: MediaQuery.of(context).size.width/2-30,

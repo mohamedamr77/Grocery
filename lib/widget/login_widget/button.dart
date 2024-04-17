@@ -25,7 +25,7 @@ Image.asset(image!,
         ),
         color: backgroundColor,
          child: ListTile(
-           leading: child != null ? Container(
+           leading: child != null ? SizedBox(
              width: 40,
              height: 40,
              child:child ,

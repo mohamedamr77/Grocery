@@ -12,7 +12,7 @@ class  CustomTextButton extends StatelessWidget{
        child:
        Text(text,
          textAlign: TextAlign.center,
-         style: TextStyle(
+         style: const TextStyle(
            fontSize: 16.0, // Adjust the font size as needed
            fontWeight: FontWeight.w400,
            fontFamily: "Inter-Regular",

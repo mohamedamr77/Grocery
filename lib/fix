@@ -1,0 +1,68 @@
+PS C:\Users\moamr\Documents\Language\Mobile App\supermarket> dart fix --apply
+Computing fixes in supermarket...
+Applying fixes...
+
+lib\main.dart
+  prefer_const_constructors • 2 fixes
+  unnecessary_import • 1 fix
+  unused_import • 2 fixes
+  use_key_in_widget_constructors • 1 fix
+
+lib\ui\homePageScreen.dart
+  prefer_const_constructors • 1 fix
+
+lib\ui\login_screen.dart
+  prefer_const_constructors • 24 fixes
+  sort_child_properties_last • 2 fixes
+  unnecessary_import • 1 fix
+  use_key_in_widget_constructors • 1 fix
+
+lib\ui\on_boardingScreen.dart
+  prefer_const_constructors • 6 fixes
+  prefer_const_constructors_in_immutables • 1 fix
+
+lib\ui\signup_screen.dart
+  prefer_const_constructors • 24 fixes
+  sort_child_properties_last • 2 fixes
+  unused_import • 1 fix
+
+lib\ui\splashscreen.dart
+  prefer_const_constructors • 5 fixes
+
+lib\widget\login_widget\button.dart
+  sized_box_for_whitespace • 1 fix
+
+lib\widget\login_widget\divider_or_divider.dart
+  prefer_const_constructors • 3 fixes
+  use_key_in_widget_constructors • 1 fix
+
+lib\widget\login_widget\have_account_row.dart
+  prefer_const_constructors • 2 fixes
+
+lib\widget\login_widget\text_button.dart
+  prefer_const_constructors • 1 fix
+
+lib\widget\login_widget\text_form_field.dart
+  prefer_const_constructors • 4 fixes
+  unnecessary_import • 1 fix
+
+lib\widget\onboardingwidget\button_next_start.dart
+  prefer_const_constructors • 3 fixes
+  sort_child_properties_last • 1 fix
+  unnecessary_import • 1 fix
+
+lib\widget\onboardingwidget\dot_widget\build_dot.dart
+  unnecessary_import • 1 fix
+  use_key_in_widget_constructors • 1 fix
+
+lib\widget\onboardingwidget\dot_widget\list_generate_dot.dart
+  use_key_in_widget_constructors • 1 fix
+
+lib\widget\onboardingwidget\pageviewwidget\customunbordingitem.dart
+  prefer_const_constructors • 4 fixes
+
+lib\widget\onboardingwidget\skip_button.dart
+  prefer_const_constructors • 2 fixes
+  use_key_in_widget_constructors • 1 fix
+
+102 fixes made in 16 files.

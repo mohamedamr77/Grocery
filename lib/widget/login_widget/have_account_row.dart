@@ -14,13 +14,13 @@ class CustomRowAccount extends StatelessWidget{
       children: [
         Text("$text",
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
             fontFamily: "Inter-Regular",
             fontWeight: FontWeight.w400,
             color: Colors.black,
           ),),
-        SizedBox(width: 3,),
+        const SizedBox(width: 3,),
         CustomTextButton(
           text: '$textButton',
           onPressed: onPressed,

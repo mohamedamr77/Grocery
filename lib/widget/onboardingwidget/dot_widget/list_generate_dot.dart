@@ -3,6 +3,8 @@ import '../pageviewwidget/list_onboarding.dart';
 import 'build_dot.dart';
 
 class CustomGenerateDot extends StatelessWidget{
+  const CustomGenerateDot({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(

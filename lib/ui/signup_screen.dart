@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:supermarket/widget/login_widget/divider_or_divider.dart';
 import '../widget/login_widget/button.dart';
 import '../widget/login_widget/have_account_row.dart';
-import '../widget/login_widget/text_button.dart';
 import '../widget/login_widget/text_form_field.dart';
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -10,9 +9,9 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff15995A),
+      backgroundColor: const Color(0xff15995A),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               colors: [
@@ -22,13 +21,13 @@ class SignUpScreen extends StatelessWidget {
           ),
         ),
         width: double.infinity,
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 35,),
-                Text("Sign Up",
+                const SizedBox(height: 35,),
+                const Text("Sign Up",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.black,
@@ -37,26 +36,26 @@ class SignUpScreen extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                SizedBox(height: 40,),
-                FieldLoginSignup(
+                const SizedBox(height: 40,),
+                const FieldLoginSignup(
                   text: 'user name or email address',
                   icon: null,),
-                SizedBox(height: 12,),
-                FieldLoginSignup(
+                const SizedBox(height: 12,),
+                const FieldLoginSignup(
                   text: 'Create password',
                   icon: null,),
-                SizedBox(height: 15,),
-                FieldLoginSignup(
+                const SizedBox(height: 15,),
+                const FieldLoginSignup(
                   text: 'Confirm password',
                   icon: Icon(Icons.remove_red_eye),),
-                SizedBox(height: 12,),
+                const SizedBox(height: 12,),
                 CustomButton(
                   text: 'Sign up',
-                  backgroundColor: Color(0xff00947A),
+                  backgroundColor: const Color(0xff00947A),
                   textColor: Colors.white,
                   onTap: () { },
                 ),
-                SizedBox(height: 12,),
+                const SizedBox(height: 12,),
                 CustomRowAccount(
                   text: "Already have an account?",
                   onPressed:(){
@@ -64,20 +63,23 @@ class SignUpScreen extends StatelessWidget {
                   } ,
                   textButton: "Login" ,
                 ),
-                SizedBox(height: 12,),
-                CustomRowDivider(),
-                SizedBox(height: 12,),
+                const SizedBox(height: 12,),
+                const CustomRowDivider(),
+                const SizedBox(height: 12,),
                 CustomButton(
                   text: "Login With Google",
-                  child: Image.asset("assets/images/googleicon.png"),
-                  backgroundColor: Color(0xffD9FFDF),
-                  textColor: Color(0xff858585),
+                  backgroundColor: const Color(0xffD9FFDF),
+                  textColor: const Color(0xff858585),
                   onTap: () { },
+                  child: Image.asset("assets/images/googleicon.png"),
                 ),
-                SizedBox(height: 12,),
+                const SizedBox(height: 12,),
                 CustomButton(
                   text: "Login With Facebook",
-                  child: CircleAvatar(
+                  backgroundColor: const Color(0xff0529EB),
+                  textColor: Colors.white,
+                  onTap: () { },
+                  child: const CircleAvatar(
                     backgroundColor: Colors.white,
                     child: Center(
                       child: Text("f",
@@ -91,12 +93,9 @@ class SignUpScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  backgroundColor: Color(0xff0529EB),
-                  textColor: Colors.white,
-                  onTap: () { },
                 ),
-                SizedBox(height: 20,),
-                Row(
+                const SizedBox(height: 20,),
+                const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("About",

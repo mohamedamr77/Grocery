@@ -12,12 +12,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(
+    Future.delayed(const Duration(
         seconds: 3
     ), () {
 
       Navigator.push(context, MaterialPageRoute(builder: (c) {
-        return OnBoardingScreen();
+        return const OnBoardingScreen();
       } ));
 
     }  ) ;
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               colors: [
@@ -49,8 +49,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30,),
-            Text("Nature Mart",
+            const SizedBox(height: 30,),
+            const Text("Nature Mart",
             style: TextStyle(
               color: Colors.white,
               fontSize: 36,

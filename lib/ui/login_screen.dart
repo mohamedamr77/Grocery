@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:supermarket/ui/signup_screen.dart';
 import 'package:supermarket/widget/login_widget/divider_or_divider.dart';
@@ -7,6 +6,8 @@ import '../widget/login_widget/have_account_row.dart';
 import '../widget/login_widget/text_button.dart';
 import '../widget/login_widget/text_form_field.dart';
 class LoginScreen extends StatefulWidget{
+  const LoginScreen({super.key});
+
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -16,9 +17,9 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff15995A),
+      backgroundColor: const Color(0xff15995A),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               colors: [
@@ -28,13 +29,13 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
         width: double.infinity,
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
                 children: [
-                  SizedBox(height: 35,),
-                  Text("Login",
+                  const SizedBox(height: 35,),
+                  const Text("Login",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.black,
@@ -43,47 +44,50 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontWeight: FontWeight.w400,
                   ),
                   ),
-                  SizedBox(height: 40,),
-                  FieldLoginSignup(
+                  const SizedBox(height: 40,),
+                  const FieldLoginSignup(
                     text: 'user name or email address',
                     icon: null,),
-                  SizedBox(height: 12,),
-                  FieldLoginSignup(
+                  const SizedBox(height: 12,),
+                  const FieldLoginSignup(
                     text: 'password',
                     icon: Icon(Icons.remove_red_eye),),
-                  SizedBox(height: 15,),
+                  const SizedBox(height: 15,),
                   CustomTextButton(
                     text: 'Forgotten password?',
                     onPressed: () {  },),
-                  SizedBox(height: 12,),
+                  const SizedBox(height: 12,),
                   CustomButton(
                     text: 'Log In',
-                    backgroundColor: Color(0xff00947A),
+                    backgroundColor: const Color(0xff00947A),
                     textColor: Colors.white,
                     onTap: () { },
                   ),
-                  SizedBox(height: 12,),
+                  const SizedBox(height: 12,),
                   CustomRowAccount(
                     text: "Don’t have an account?",
                     onPressed:(){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpScreen()));
                     } ,
                     textButton: "sign up" ,
                   ),
-                  SizedBox(height: 12,),
-                  CustomRowDivider(),
-                  SizedBox(height: 12,),
+                  const SizedBox(height: 12,),
+                  const CustomRowDivider(),
+                  const SizedBox(height: 12,),
                   CustomButton(
                     text: "Login With Google",
-                    child: Image.asset("assets/images/googleicon.png"),
-                    backgroundColor: Color(0xffD9FFDF),
-                    textColor: Color(0xff858585),
+                    backgroundColor: const Color(0xffD9FFDF),
+                    textColor: const Color(0xff858585),
                     onTap: () { },
+                    child: Image.asset("assets/images/googleicon.png"),
                   ),
-                  SizedBox(height: 12,),
+                  const SizedBox(height: 12,),
                   CustomButton(
                     text: "Login With Facebook",
-                    child: CircleAvatar(
+                    backgroundColor: const Color(0xff0529EB),
+                    textColor: Colors.white,
+                    onTap: () { },
+                    child: const CircleAvatar(
                       backgroundColor: Colors.white,
                       child: Center(
                         child: Text("f",
@@ -97,12 +101,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                    backgroundColor: Color(0xff0529EB),
-                    textColor: Colors.white,
-                    onTap: () { },
                   ),
-                  SizedBox(height: 20,),
-                  Row(
+                  const SizedBox(height: 20,),
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("About",

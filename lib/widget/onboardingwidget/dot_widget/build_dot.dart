@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:supermarket/widget/onboardingwidget/variable_data.dart';
 
 class CustomDot extends StatelessWidget {
   int index;
-   CustomDot({required this.index});
+   CustomDot({super.key, required this.index});
   @override
   Widget build(BuildContext context) {
     return Container(

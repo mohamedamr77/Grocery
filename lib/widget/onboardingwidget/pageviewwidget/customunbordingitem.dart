@@ -23,22 +23,22 @@ class CustomUnBoaringItem extends StatelessWidget{
               ),
               child: Text(title,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w400,
                   fontFamily: "IrishGrover-Regular",
                 ),
               ),
             ),
-            SizedBox(height: 15,),
+            const SizedBox(height: 15,),
             Text(describtion,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 15,
                   fontFamily: "Abel-Regular",
                   fontWeight: FontWeight.w400,)
             ),
-            SizedBox(height: 40,),
+            const SizedBox(height: 40,),
             Image.asset(image,
               height: 300,
             ),

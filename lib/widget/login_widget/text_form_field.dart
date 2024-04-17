@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class  FieldLoginSignup extends StatelessWidget{
@@ -15,20 +14,20 @@ class  FieldLoginSignup extends StatelessWidget{
       child: TextFormField(
         decoration: InputDecoration(
             filled: true,
-            fillColor: Color(0xffD9FFDF),
+            fillColor: const Color(0xffD9FFDF),
             hintText: text,
             suffixIcon: icon,
-            hintStyle: TextStyle(
+            hintStyle: const TextStyle(
             fontSize: 15.0, // Adjust the font size as needed
             fontWeight: FontWeight.w400,
             fontFamily: "Inter-Regular",
             color: Color(0xff858585), // Adjust the color as needed
           ),
-            enabledBorder: OutlineInputBorder(
+            enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Color(0xffD9FFDF)),
               borderRadius: BorderRadius.all(Radius.circular(10)),
             ) ,
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.blueAccent),
               borderRadius: BorderRadius.all(Radius.circular(10)),
           ),

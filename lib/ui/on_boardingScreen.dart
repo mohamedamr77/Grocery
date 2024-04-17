@@ -8,7 +8,7 @@ import '../widget/onboardingwidget/dot_widget/list_generate_dot.dart';
 import '../widget/onboardingwidget/skip_button.dart';
 
 class OnBoardingScreen extends StatefulWidget {
-   OnBoardingScreen({super.key});
+   const OnBoardingScreen({super.key});
 
   @override
   State<OnBoardingScreen> createState() => _OnBoardingScreenState();
@@ -33,7 +33,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     return Scaffold(
 
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
               colors: [
@@ -50,23 +50,23 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
              VaribleApp.currentIndex=index;
            })),
 
-            CustomGenerateDot(),
+            const CustomGenerateDot(),
 
             CustomNextOrStartButton(
                 onPressed: (){ //2 //
 
                   if( VaribleApp.currentIndex<listunBoarding.length-1){
-                 _controller.nextPage(duration: Duration(milliseconds: 100), curve: Curves.bounceIn);
+                 _controller.nextPage(duration: const Duration(milliseconds: 100), curve: Curves.bounceIn);
                 }
                 else{
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const HomePage()));
               }
 
             }),
 
-            CustomSkipButton(),
+            const CustomSkipButton(),
 
-            SizedBox(height: 40,),
+            const SizedBox(height: 40,),
 
           ],
         ),
