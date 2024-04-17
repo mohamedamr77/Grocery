@@ -2,13 +2,19 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget{
    final String? text;
-   final String? image;
+   final Widget? child;
    final Color? backgroundColor;
    final Color? textColor;
    void Function()? onTap;
 
-   CustomButton({super.key,required this.text, this.image,required this.backgroundColor,required this.textColor,required this.onTap});
-
+   CustomButton({super.key,required this.text, this.child,required this.backgroundColor,required this.textColor,required this.onTap});
+/*
+Image.asset(image!,
+             // Set appropriate width and height constraints as needed
+             width: 40,
+             height: 40,
+           )
+ */
    @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,10 +25,10 @@ class CustomButton extends StatelessWidget{
         ),
         color: backgroundColor,
          child: ListTile(
-           leading: image != null ? Image.asset(image!,
-             // Set appropriate width and height constraints as needed
+           leading: child != null ? Container(
              width: 40,
              height: 40,
+             child:child ,
            ) : null,
            title: Text("$text",
             textAlign: TextAlign.center,

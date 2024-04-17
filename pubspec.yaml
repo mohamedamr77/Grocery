@@ -90,6 +90,10 @@ flutter:
     - family: Inter-Regular
       fonts:
         - asset: assets/fonts/Inter-Regular.ttf
+
+    - family: JetBrainsMono-Regular
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
 #     - family:
 #       fonts:
 #            Abel-Regular.ttf

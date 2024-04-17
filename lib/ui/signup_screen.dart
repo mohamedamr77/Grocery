@@ -69,7 +69,7 @@ class SignUpScreen extends StatelessWidget {
                 SizedBox(height: 12,),
                 CustomButton(
                   text: "Login With Google",
-                  image: "assets/images/googleicon.png",
+                  child: Image.asset("assets/images/googleicon.png"),
                   backgroundColor: Color(0xffD9FFDF),
                   textColor: Color(0xff858585),
                   onTap: () { },
@@ -77,7 +77,20 @@ class SignUpScreen extends StatelessWidget {
                 SizedBox(height: 12,),
                 CustomButton(
                   text: "Login With Facebook",
-                  image: "assets/images/faceicon.png",
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    child: Center(
+                      child: Text("f",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xff0529EB),
+                          fontSize: 28,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "JetBrainsMono-Regular",
+                        ),
+                      ),
+                    ),
+                  ),
                   backgroundColor: Color(0xff0529EB),
                   textColor: Colors.white,
                   onTap: () { },
