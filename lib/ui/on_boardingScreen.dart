@@ -7,13 +7,13 @@ import 'package:supermarket/widget/onboardingwidget/pageviewwidget/page_view_ite
 import '../widget/onboardingwidget/dot_widget/list_generate_dot.dart';
 import '../widget/onboardingwidget/skip_button.dart';
 
-class OnBoarding extends StatefulWidget {
-   OnBoarding({super.key});
+class OnBoardingScreen extends StatefulWidget {
+   OnBoardingScreen({super.key});
 
   @override
-  State<OnBoarding> createState() => _OnBoardingState();
+  State<OnBoardingScreen> createState() => _OnBoardingScreenState();
 }
-class _OnBoardingState extends State<OnBoarding> {
+class _OnBoardingScreenState extends State<OnBoardingScreen> {
   late PageController _controller;
 
   @override
