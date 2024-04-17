@@ -86,6 +86,10 @@ flutter:
     - family: Aladin-Regular
       fonts:
         - asset: assets/fonts/Aladin-Regular.ttf
+
+    - family: Inter-Regular
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
 #     - family:
 #       fonts:
 #            Abel-Regular.ttf
